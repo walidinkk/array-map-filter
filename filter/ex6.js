@@ -26,7 +26,12 @@ Sortie attendue:
 
 */
 
-function filterOffensiveComments(comments, bannedWords) {
+
+const filterOffensiveComments = (comments, bannedWords) => {
+
+  banned = bannedWords.join('|');
+  const regex = RegExp(banned,"i");
+  return comments.filter(x => !regex.test(x))
 }
 
 // Ne pas modifier l'export

@@ -1,6 +1,6 @@
 const keepStarks = require('../filter/ex3.js');
 
-xdescribe('filter - exercice 3', () => {
+describe('filter - exercice 3', () => {
 
   test('keepStarks', () => {
     expect(keepStarks([
@@ -15,4 +15,3 @@ xdescribe('filter - exercice 3', () => {
   });
 
 });
-

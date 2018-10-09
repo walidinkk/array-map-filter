@@ -79,5 +79,7 @@ const getMoviesFreshness = (movies) => {
     }
   })
 }
+
+
 // Ne pas modifier l'export
 module.exports = getMoviesFreshness;
