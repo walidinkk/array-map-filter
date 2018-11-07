@@ -52,8 +52,10 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 */
 
 const getCirclesProperties = (radiuses) => {
-  return radiuses.map(x => {return {radius : x, circumference : (2 * Math.PI * x).toFixed(3), surface : (Math.PI * x * x).toFixed(3) }})
+  return radiuses.map(x => {
+    return {radius : x, circumference : (2 * Math.PI * x).toFixed(3), surface : (Math.PI * x * x).toFixed(3) }})
 }
 
+// console.log(getCirclesProperties([1, 3, 4.5, 7]));
 // Ne pas modifier l'export
 module.exports = getCirclesProperties;

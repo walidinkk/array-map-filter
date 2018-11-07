@@ -42,16 +42,7 @@ En sortie: [
 
  */
 
-const getFoodCategories = foods => {
-  return foods.map(x => {
-    if(x.isVegetarian === true){
-      return x.food + " is suitable for vegetarians";
-    }
-    else{
-      return x.food + " is not suitable for vegetarians";
-    }
-  })
-}
+const getFoodCategories = foods => foods.map(x => x.isVegetarian ? x.food + " is suitable for vegetarians" : x.food + " is not suitable for vegetarians")
 
 // Ne pas modifier l'export
 module.exports = getFoodCategories;

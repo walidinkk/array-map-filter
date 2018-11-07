@@ -59,27 +59,7 @@ En sortie:
 
  */
 
-const getMoviesFreshness = (movies) => {
-
-  return movies.map(x => {
-
-    if(x.rating > 75){
-      x.label = "certified fresh";
-      return x
-    }
-
-    else if (x.rating < 60) {
-      x.label = "rotten";
-      return x
-    }
-
-    else{
-      x.label = "fresh"
-      return x
-    }
-  })
-}
-
+const getMoviesFreshness = (movies) => movies.map(x => x.rating > 75 ? (x.label = "certified fresh", x) : x.rating < 60 ? (x.label = "rotten", x) : (x.label = "fresh", x))
 
 // Ne pas modifier l'export
 module.exports = getMoviesFreshness;
