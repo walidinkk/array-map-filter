@@ -23,9 +23,9 @@ Sortie attendue:
 
  */
 
-const keepStarks = (names) => {
-  return names.filter(x => x.includes("Stark"))
-}
+const keepStarks = (names) => names.filter(x => x.includes("Stark"))
+
+// console.log(keepStarks(['Bran Stark', 'Cersei Lannister', 'Sandor Clegane', 'Arya Stark', 'Yara Greyjoy', 'Sansa Stark']));
 
 // Ne pas modifier l'export
 module.exports = keepStarks;
